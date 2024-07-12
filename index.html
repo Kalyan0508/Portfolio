@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head><script type="text/javascript" src="/___vscode_livepreview_injected_script"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8a73682344.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="Logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Creative Enthusisast</p>
+                <h1>Hi,I am <span>kalyan</span> from India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------about----------------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>As a driven and innovative Computer Science Engineering student,
+                        I bring a strong foundation in web development and project management, with notable
+                        internships at Codsoft and Teachnook, and a solid academic record,
+                        including a 10/10 GPA in 10th grade and exceptional performances in competitive exams.
+                        I'm now poised to leverage my technical expertise and academic excellence to contribute to
+                        innovative projects and drive success in a forward-thinking organization.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('grades')">Grades</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web-Development</span><br>Creative Web Developerr</li>
+                            <li><span>Machine-Learning</span><br>Training,Testing,Clustering,etc</li>
+                            <li><span>Data Structures</span><br>DSA in C Language </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>oct-nov 2023</span><br>Web Development Intern at Codsoft </li>
+                            <li><span>Dec 2023-feb 2024</span><br>Web-Development intern at Teachnook</li>
+                            <li><span>april-may 2024</span><br>Machine Learning intern at Plasmid </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span><br>Completed SSC-New Era High School</li>
+                            <li><span>2022</span><br>Completed Intermediate-New Vision Junior College</li>
+                            <li><span>2022-present</span><br>Pursuing 3rd year(CSE),B-tech in NIT Andhra Pradesh</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="grades">
+                        <ul>
+                            <li><span>2020</span><br>SSC-10 GPA</li>
+                            <li><span>2022</span><br>IPE-98.4%, JEE MAINS-97.6 Percentile</li>
+                            <li><span>2022-present</span><br>SGPA-8.5<br>Current CGPA-8.23</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------services------------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>
+                        Web design focuses on creating intuitive, responsive websites that prioritize user needs and
+                        behaviors, ensuring seamless navigation and accessibility. Additionally, it involves maintaining
+                        a consistent visual appeal with cohesive colors, fonts, and images that reflect the brand's
+                        identity while balancing aesthetics and functionality.</p>
+                    <a href="https://www.geeksforgeeks.org/web%20design/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Machine Learning</h2>
+                    <p>
+                        Machine learning involves developing algorithms that allow computers to learn from and make 
+                        predictions based on data. It enables systems to improve their performance on tasks 
+                        over time without being explicitly programmed..</p>
+                    <a href="https://www.geeksforgeeks.org/machine-learning/">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>Data Structure and Algorithms</h2>
+                    <p>Data structures and algorithms are fundamental concepts in computer science
+                      that organize and process data efficiently. Data structures define ways to store and manage data, 
+                      while algorithms provide step-by-step procedures for solving computational problems.</p>
+                    <a href="https://www.geeksforgeeks.org/learn-data-structures-and-algorithms-dsa-tutorial/">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Certificates</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/codsoft.png">
+                    <div class="layer">
+                        <p> Web-Development intern at Codsoft from oct-nov 2023</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/accenture.png">
+                    <div class="layer">
+                        <p> Analysis of Data at Forage in april 2024</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/plasmid.png">
+                    <div class="layer">
+                        <p> AI intern at Plasmid from april-may 2024</p>
+                    </div>
+                </div>
+            </div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/coursera.png">
+                    <div class="layer">
+                        <p> Gained the knowledge of Project Management from Coursera,Google in Jan 2024</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/teachnook.png">
+                    <div class="layer">
+                        <p> Web-Development intern at Teachnook in collabaration with IIT Indore From dec 2023 -feb 2024</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/naresh.png">
+                    <div class="layer">
+                        <p> Gained the knowledge of Core Java from NareshITech from dec-2023-feb 2024</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+<!-- -----------contact----------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fas fa-paper-plane"></i>kalyanr0508@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>9550272877</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/_r_aa_m_0258/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/g-kalyan-ram-2a02b8261?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.t.me/kalyan0508"><i class="fa-brands fa-telegram"></i></a>
+                    <a href="https://www.kalyanr0508@gmail.com"><i class="fa-brands fa-envelope"></i></a>
+                    <a href="https://github.com/Kalyan0508/"><i class="fa-brands fa-github"></i></a>
+
+                </div>
+                <a href="images/Kalyan-Resume.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn3">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>copyright @Kalyan.<i class="fa-solid fa-heart"></i> Student at NIT</p>
+    </div>
+ </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxZiTTiOryywXE6uBcj_mybYjixg8SJmUyfUmQmDqAtMg2n1ga4g39ZwKqfX_fzxY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg =document.getElementById("msg")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML ="Message sent successfully"
+                 setTimeout(function(){
+                    msg.innerHTML=""
+                },5000) 
+                form.reset()
+            })  
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+  
+</body>
+
+</html>
